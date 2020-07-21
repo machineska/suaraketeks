@@ -8,11 +8,11 @@ from pydub import AudioSegment, effects
 from pydub.silence import split_on_silence
 
 dataset_dir = '../datatest/'
-filename = dataset_dir + '21062020-2.wav'
+filename = dataset_dir + '02.m4a'
 
 
-myresult = str(uuid4())
-mychunk = str(uuid4())
+myresult = str(uuid4().hex)
+mychunk = myresult
 
 
 # a function that splits the audio file into chunks
@@ -122,4 +122,4 @@ def silence_based_conversion(path=filename, silence_thresh=-33):
 
 
 if __name__ == '__main__':
-    silence_based_conversion()
+    silence_based_conversion(silence_thresh=-35)
