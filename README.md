@@ -1,4 +1,5 @@
 # suaraketeks
 
-`cd src`
-`python converter2.py`
+```cd src```
+
+```python converter2.py```
